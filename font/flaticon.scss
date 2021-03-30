@@ -1,0 +1,65 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?e958d7762e353c0925d4e71cb113032f") format("truetype"),
+url("./flaticon.woff?e958d7762e353c0925d4e71cb113032f") format("woff"),
+url("./flaticon.woff2?e958d7762e353c0925d4e71cb113032f") format("woff2"),
+url("./flaticon.eot?e958d7762e353c0925d4e71cb113032f#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e958d7762e353c0925d4e71cb113032f#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "boxing-fighter": "\f101",
+    "buddhist-yoga-pose": "\f102",
+    "cycling": "\f103",
+    "exercise": "\f104",
+    "fitness": "\f105",
+    "man-exercising-back-and-legs": "\f106",
+    "man-exercising-leg-on-the-flor": "\f107",
+    "man-exercising-legs": "\f108",
+    "skipping-rope": "\f109",
+    "weightlifter": "\f10a",
+);
+
+.flaticon-boxing-fighter:before {
+    content: map-get($flaticon-map, "boxing-fighter");
+}
+.flaticon-buddhist-yoga-pose:before {
+    content: map-get($flaticon-map, "buddhist-yoga-pose");
+}
+.flaticon-cycling:before {
+    content: map-get($flaticon-map, "cycling");
+}
+.flaticon-exercise:before {
+    content: map-get($flaticon-map, "exercise");
+}
+.flaticon-fitness:before {
+    content: map-get($flaticon-map, "fitness");
+}
+.flaticon-man-exercising-back-and-legs:before {
+    content: map-get($flaticon-map, "man-exercising-back-and-legs");
+}
+.flaticon-man-exercising-leg-on-the-flor:before {
+    content: map-get($flaticon-map, "man-exercising-leg-on-the-flor");
+}
+.flaticon-man-exercising-legs:before {
+    content: map-get($flaticon-map, "man-exercising-legs");
+}
+.flaticon-skipping-rope:before {
+    content: map-get($flaticon-map, "skipping-rope");
+}
+.flaticon-weightlifter:before {
+    content: map-get($flaticon-map, "weightlifter");
+}
